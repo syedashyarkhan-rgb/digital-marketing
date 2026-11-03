@@ -202,7 +202,7 @@ export default function AddCaseContent() {
 
 
                 <footer className="site-footer">
-                    <p>Copyright © 2026 Your Company. Designed by <a href="https://templatemo.com" target="_blank" rel="nofollow">TemplateMo</a></p>
+                    <p>Copyright © 2026 Your Company. Designed by <a href="https://templatemo.com" target="_blank" rel="nofollow noreferrer">TemplateMo</a></p>
                 </footer>
             </div>
         </>

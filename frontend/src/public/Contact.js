@@ -16,7 +16,7 @@ export default function Contact() {
                 {/* <!-- END NAVBAR-->							 */}
 
                 {/* <!-- START SECTION TOP --> */}
-                <section className="section-top" style={{backgroundImage: "url(assets/img/bg/section-top.png)",backgroundSize:"cover", backgroundPosition: "center center"}}>
+                <section className="section-top" style={{ backgroundImage: "url(assets/img/bg/section-top.png)", backgroundSize: "cover", backgroundPosition: "center center" }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 col-sm-12 col-xs-12 text-center">
@@ -65,6 +65,7 @@ export default function Contact() {
                 {/* <!-- START MAP --> */}
                 <div className="map">
                     <iframe
+                        title="Google Maps Location"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.957183635167!2d-74.00402768559431!3d40.71895904512855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598a1316e7a7%3A0x47bb20eb6074b3f0!2sNew%20Work%20City%20-%20(CLOSED)!5e0!3m2!1sbn!2sbd!4v1600305497356!5m2!1sbn!2sbd"
                         style={{ border: "0" }}
                         allowFullScreen
@@ -76,8 +77,8 @@ export default function Contact() {
 
                 {/* <!-- CONTACT --> */}
 
-                
-                <PopularContact/>
+
+                <PopularContact />
                 {/* <!-- END CONTACT -->		 */}
 
                 {/* <!-- START PARTNER LOGO --> */}
