@@ -1,0 +1,169 @@
+
+/* Independent Contact Page */
+
+.ash-contact-page,
+.ash-contact-page * {
+    box-sizing: border-box;
+}
+
+.ash-contact-page {
+    width: 100%;
+    padding: 90px 20px;
+    background: #0e5ca6;
+    font-family: Arial, sans-serif;
+    position: relative;
+    isolation: isolate;
+}
+
+.ash-contact-container {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.ash-contact-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ash-contact-label {
+    display: inline-block;
+    color: #ffaa17;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.ash-contact-heading h2 {
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 0 15px;
+}
+
+.ash-contact-heading p {
+    color: #e5effa;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.ash-contact-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+.ash-contact-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.ash-contact-field {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.ash-contact-full {
+    grid-column: 1 / -1;
+}
+
+.ash-contact-field label {
+    display: block;
+    color: #202b3c;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.ash-contact-page .ash-contact-field input,
+.ash-contact-page .ash-contact-field textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 15px;
+    margin: 0;
+    border: 1px solid #d9e0e8;
+    border-radius: 6px;
+    background: #f8fafc;
+    color: #202b3c;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    outline: none;
+    box-shadow: none;
+    pointer-events: auto;
+}
+
+.ash-contact-page .ash-contact-field input {
+    height: 55px;
+}
+
+.ash-contact-page .ash-contact-field textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.ash-contact-page .ash-contact-field input:focus,
+.ash-contact-page .ash-contact-field textarea:focus {
+    border-color: #0e5ca6;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(14, 92, 166, 0.10);
+}
+
+.ash-contact-page .ash-contact-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 35px;
+    border: 0;
+    border-radius: 6px;
+    background: #ffaa17;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.ash-contact-page .ash-contact-button:hover {
+    background: #202b3c;
+}
+
+.ash-contact-success {
+    color: #16803c;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .ash-contact-page {
+        padding: 60px 15px;
+    }
+
+    .ash-contact-heading h2 {
+        font-size: 30px;
+    }
+
+    .ash-contact-card {
+        padding: 25px 18px;
+    }
+
+    .ash-contact-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .ash-contact-full {
+        grid-column: auto;
+    }
+
+    .ash-contact-page .ash-contact-button {
+        width: 100%;
+        text-align: center;
+    }
+}
