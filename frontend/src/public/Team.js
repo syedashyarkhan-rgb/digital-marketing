@@ -32,8 +32,16 @@ export default function Team() {
                         <p>{item.title}</p>
                       </div>
                       <ul className="social">
-                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className={item.icon}></a></li>
-                        <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className={item.icon2}></a></li>
+                        <li>
+                          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className={item.icon} aria-label="Facebook">
+                            <span className="sr-only">Facebook</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className={item.icon2} aria-label="Twitter">
+                            <span className="sr-only">Twitter</span>
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </div>

@@ -271,18 +271,18 @@ export default function PopularBlogSingleProject() {
               <div className="tag">
                 <h4 className="blog_sidebar_title">Tag cloud</h4>
 
-                <a href="#">Digital Marketing</a>
-                <a href="#">Development</a>
-                <a href="#">SEO</a>
-                <a href="#">Business</a>
-                <a href="#">Technology</a>
-                <a href="#">Branding</a>
-                <a href="#">Online Growth</a>
-                <a href="#">Digital Strategy</a>
+                <a href="/">Digital Marketing</a>
+                <a href="/">Development</a>
+                <a href="/">SEO</a>
+                <a href="/">Business</a>
+                <a href="/">Technology</a>
+                <a href="/">Branding</a>
+                <a href="/">Online Growth</a>
+                <a href="/">Digital Strategy</a>
               </div>
 
               <div className="banner">
-                <a href="#">
+                <a href="/">
                   <img
                     src="assets/img/blog/banner_3.jpg"
                     className="img-fluid"
