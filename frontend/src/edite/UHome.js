@@ -12,7 +12,7 @@ export default function UHome() {
 
 
   useEffect(()=>{
-      Axios.get("http://localhost:3000/singlehome/"+id, {
+      Axios.get("https://digital-marketing-l4y5.vercel.app/singlehome/"+id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -40,7 +40,7 @@ export default function UHome() {
 
 
 
-        Axios.post("http://localhost:3000/uhome", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/uhome", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

@@ -12,7 +12,7 @@ export default function USingleBlog() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singlesblogs/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singlesblogs/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -43,7 +43,7 @@ export default function USingleBlog() {
 
 
 
-        Axios.post("http://localhost:3000/usingleblog", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/usingleblog", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

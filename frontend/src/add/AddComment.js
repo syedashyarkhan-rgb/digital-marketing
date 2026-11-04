@@ -19,7 +19,7 @@ export default function AddComment() {
 
 
 
-        Axios.post("http://localhost:3000/addcomment", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addcomment", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

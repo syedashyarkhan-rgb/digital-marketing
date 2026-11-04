@@ -19,7 +19,7 @@ export default function AddFeature() {
 
 
 
-        Axios.post("http://localhost:3000/addfeature", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addfeature", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

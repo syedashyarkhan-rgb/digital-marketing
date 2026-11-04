@@ -23,7 +23,7 @@ export default function AddSecondHome() {
 
 
 
-        Axios.post("http://localhost:3000/addhome2", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addhome2", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

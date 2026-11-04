@@ -5,7 +5,7 @@ export default function PopularEmail() {
 	const [email,setEmail]=useState([]);
    
        useEffect(() => {
-        Axios.get("http://localhost:3000/email")
+        Axios.get("https://digital-marketing-l4y5.vercel.app/email")
           .then(res => { setEmail(res.data.data) })
       }, [])
   return (

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TSocialmedia() {
   const [social, setSocial] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/socialmedia", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/socialmedia", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -16,7 +16,7 @@ export default function TSocialmedia() {
     const newlist = social.filter(v => v._id !== ind)
     setSocial(newlist)
 
-    Axios.delete("http://localhost:3000/delsocialmedia/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/delsocialmedia/" + ind, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }

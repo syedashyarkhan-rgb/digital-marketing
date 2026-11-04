@@ -13,7 +13,7 @@ export default function USerachEngine() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singlesearchengine/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singlesearchengine/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -46,7 +46,7 @@ export default function USerachEngine() {
 
 
 
-        Axios.post("http://localhost:3000/usearchengine", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/usearchengine", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

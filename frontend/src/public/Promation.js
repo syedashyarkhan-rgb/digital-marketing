@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 export default function Promation() {
   const [promation,setPromation]=useState([])
      useEffect(() => {
-          Axios.get("http://localhost:3000/promation")
+          Axios.get("https://digital-marketing-l4y5.vercel.app/promation")
             .then(res => { setPromation(res.data.data) })
         }, [])
   return (

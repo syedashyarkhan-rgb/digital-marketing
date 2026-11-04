@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TTestimonials() {
   const [testimional, setTestimional] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/testimonials", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/testimonials", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -17,7 +17,7 @@ export default function TTestimonials() {
     const newlist = testimional.filter(v => v._id !== ind)
     setTestimional(newlist)
 
-    Axios.delete("http://localhost:3000/deltestimonials/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/deltestimonials/" + ind, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }

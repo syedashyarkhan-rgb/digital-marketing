@@ -13,7 +13,7 @@ export default function ULeadGeneration() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singlelead/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singlelead/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -46,7 +46,7 @@ export default function ULeadGeneration() {
 
 
 
-        Axios.post("http://localhost:3000/uleadgeneration", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/uleadgeneration", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

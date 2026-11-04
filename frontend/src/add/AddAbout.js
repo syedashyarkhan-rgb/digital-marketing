@@ -19,7 +19,7 @@ export default function AddAbout() {
 
 
 
-        Axios.post("http://localhost:3000/addabout", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addabout", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

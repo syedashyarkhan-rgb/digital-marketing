@@ -11,7 +11,7 @@ export default function UFeature() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singlefeature/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singlefeature/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -39,7 +39,7 @@ export default function UFeature() {
 
 
 
-        Axios.post("http://localhost:3000/ufeature", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/ufeature", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

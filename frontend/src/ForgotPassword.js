@@ -20,7 +20,7 @@ export default function ForgotPassword() {
         try {
 
             const res = await Axios.post(
-                "http://localhost:3000/forgot-password",
+                "https://digital-marketing-l4y5.vercel.app/forgot-password",
                 {
                     email
                 }

@@ -11,7 +11,7 @@ export default function UMarketing() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singlemarket/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singlemarket/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -41,7 +41,7 @@ export default function UMarketing() {
 
 
 
-        Axios.post("http://localhost:3000/umarket", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/umarket", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

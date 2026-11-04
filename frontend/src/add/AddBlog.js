@@ -25,7 +25,7 @@ export default function AddBlog() {
 
 
 
-        Axios.post("http://localhost:3000/addblog", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addblog", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

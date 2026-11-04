@@ -5,7 +5,7 @@ export default function PopularFeature() {
      const [feature,setFeature]=useState([]);
          
              useEffect(() => {
-              Axios.get("http://localhost:3000/feature")
+              Axios.get("https://digital-marketing-l4y5.vercel.app/feature")
                 .then(res => { setFeature(res.data.data) })
             }, [])
   return (

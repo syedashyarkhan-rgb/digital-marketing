@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 export default function TSliderBlog() {
   const [sliderblog, setSliderblog] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/blogslidebar", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/blogslidebar", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -17,7 +17,7 @@ export default function TSliderBlog() {
     const newlist = sliderblog.filter(v => v._id !== ind)
     setSliderblog(newlist)
 
-    Axios.delete("http://localhost:3000/delblogslidebar/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/delblogslidebar/" + ind, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }

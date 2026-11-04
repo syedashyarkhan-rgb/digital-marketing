@@ -5,7 +5,7 @@ import  Axios  from 'axios'
 export default function MainPage() {
   const [home,setHome]=useState([])
    useEffect(() => {
-    Axios.get("http://localhost:3000/home")
+    Axios.get("https://digital-marketing-l4y5.vercel.app/home")
       .then(res => { setHome(res.data.data) })
   }, [])
   return (

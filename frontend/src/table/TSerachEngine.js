@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TSerachEngine() {
     const [searchengine, setSearchengine] = useState([])
     useEffect(() => {
-        Axios.get("http://localhost:3000/searchengine", {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/searchengine", {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -16,7 +16,7 @@ export default function TSerachEngine() {
         const newlist = searchengine.filter(v => v._id !== ind)
         setSearchengine(newlist)
 
-        Axios.delete("http://localhost:3000/delsearchengine/" + ind, {
+        Axios.delete("https://digital-marketing-l4y5.vercel.app/delsearchengine/" + ind, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

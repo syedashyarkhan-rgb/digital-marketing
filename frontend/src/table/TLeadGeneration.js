@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 export default function TLeadGeneration() {
   const [lead, setLead] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/leadgeneration", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/leadgeneration", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -17,7 +17,7 @@ export default function TLeadGeneration() {
     const newlist = lead.filter(v => v._id !== ind)
     setLead(newlist)
 
-    Axios.delete("http://localhost:3000/delleadgeneration/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/delleadgeneration/" + ind, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }

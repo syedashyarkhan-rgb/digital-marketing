@@ -5,7 +5,7 @@ export default function PopularAbout() {
   const [about,setAbout]=useState([]);
      
          useEffect(() => {
-          Axios.get("http://localhost:3000/about")
+          Axios.get("https://digital-marketing-l4y5.vercel.app/about")
             .then(res => { setAbout(res.data.data) })
         }, [])
   return (

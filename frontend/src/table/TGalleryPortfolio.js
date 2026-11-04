@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TGalleryPortfolio() {
   const [gportfolio, setGportfolio] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/gallaryportfolio", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/gallaryportfolio", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -17,7 +17,7 @@ export default function TGalleryPortfolio() {
     const newlist = gportfolio.filter(v => v._id !== ind)
     setGportfolio(newlist)
 
-    Axios.delete("http://localhost:3000/delgallaryportfolio/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/delgallaryportfolio/" + ind, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }

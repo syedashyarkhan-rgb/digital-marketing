@@ -5,7 +5,7 @@ export default function PopularCaseStudy() {
    const [casecontent, setCasecontent] = useState([]);
   
     useEffect(() => {
-      Axios.get("http://localhost:3000/casecontent")
+      Axios.get("https://digital-marketing-l4y5.vercel.app/casecontent")
         .then(res => { setCasecontent(res.data.data) })
     }, [])
   return (

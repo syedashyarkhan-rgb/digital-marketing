@@ -21,7 +21,7 @@ export default function AddCaseStudy() {
 
 
 
-        Axios.post("http://localhost:3000/addcasestudy", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addcasestudy", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

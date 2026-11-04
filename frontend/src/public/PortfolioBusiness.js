@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function PortfolioBusiness() {
 	 const [portfolio,setPortfolio]=useState([])
 	   useEffect(() => {
-			Axios.get("http://localhost:3000/portfolio")
+			Axios.get("https://digital-marketing-l4y5.vercel.app/portfolio")
 			  .then(res => { setPortfolio(res.data.data) })
 		  }, [])
   return (

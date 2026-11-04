@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TSingleBlog() {
   const [singleblog, setSingleblog] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/singleblog", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/singleblog", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -16,7 +16,7 @@ export default function TSingleBlog() {
     const newlist = singleblog.filter(v => v._id !== ind)
     setSingleblog(newlist)
 
-    Axios.delete("http://localhost:3000/delsingleblog/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/delsingleblog/" + ind, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }

@@ -13,7 +13,7 @@ export default function UTeam() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singleteam/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singleteam/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -46,7 +46,7 @@ export default function UTeam() {
 
 
 
-        Axios.post("http://localhost:3000/uteam", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/uteam", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

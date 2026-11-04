@@ -15,7 +15,7 @@ export default function UBlog() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singleblog/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singleblog/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -51,7 +51,7 @@ export default function UBlog() {
 
 
 
-        Axios.post("http://localhost:3000/ublog", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/ublog", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

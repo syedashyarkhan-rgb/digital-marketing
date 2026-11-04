@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 export default function Testimonials() {
   const [testimional,settestimional]=useState([])
      useEffect(() => {
-          Axios.get("http://localhost:3000/testimonials")
+          Axios.get("https://digital-marketing-l4y5.vercel.app/testimonials")
             .then(res => { settestimional(res.data.data) })
         }, [])
   return (

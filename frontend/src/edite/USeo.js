@@ -13,7 +13,7 @@ export default function USeo() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singleseo/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singleseo/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -46,7 +46,7 @@ export default function USeo() {
 
 
 
-        Axios.post("http://localhost:3000/useo", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/useo", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

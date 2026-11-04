@@ -184,7 +184,7 @@ export default function Login() {
     try {
 
       const res = await Axios.post(
-        "http://localhost:3000/login",
+        "https://digital-marketing-l4y5.vercel.app/login",
         {
           name,
           password

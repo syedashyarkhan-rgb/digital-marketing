@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TEmail() {
     const [email, setEmail] = useState([])
     useEffect(() => {
-        Axios.get("http://localhost:3000/email", {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/email", {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -16,7 +16,7 @@ export default function TEmail() {
         const newlist = email.filter(v => v._id !== ind)
         setEmail(newlist)
 
-        Axios.delete("http://localhost:3000/delemail/" + ind, {
+        Axios.delete("https://digital-marketing-l4y5.vercel.app/delemail/" + ind, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

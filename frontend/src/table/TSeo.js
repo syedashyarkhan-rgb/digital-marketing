@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TSeo() {
     const [seo, setSeo] = useState([])
     useEffect(() => {
-        Axios.get("http://localhost:3000/seo", {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/seo", {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -16,7 +16,7 @@ export default function TSeo() {
         const newlist = seo.filter(v => v._id !== ind)
         setSeo(newlist)
 
-        Axios.delete("http://localhost:3000/delseo/" + ind, {
+        Axios.delete("https://digital-marketing-l4y5.vercel.app/delseo/" + ind, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

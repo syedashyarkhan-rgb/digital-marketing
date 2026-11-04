@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TVideo() {
   const [video, setVideo] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/video", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/video", {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -17,7 +17,7 @@ export default function TVideo() {
     const newlist = video.filter(v => v._id !== ind)
     setVideo(newlist)
 
-    Axios.delete("http://localhost:3000/delvideo/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/delvideo/" + ind, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

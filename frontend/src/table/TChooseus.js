@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TChooseus() {
   const [choose, setChoose] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/chooseus", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/chooseus", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -17,7 +17,7 @@ export default function TChooseus() {
     const newlist = choose.filter(v => v._id !== ind)
     setChoose(newlist)
 
-    Axios.delete("http://localhost:3000/delchoose/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/delchoose/" + ind, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }

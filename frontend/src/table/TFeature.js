@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TFeature() {
   const [feature, setFeature] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/feature", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/feature", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -17,7 +17,7 @@ export default function TFeature() {
     const newlist = feature.filter(v => v._id !== ind)
     setFeature(newlist)
 
-    Axios.delete("http://localhost:3000/delfeature/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/delfeature/" + ind, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }

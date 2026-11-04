@@ -12,7 +12,7 @@ export default function UCaseStudy() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singlecasestudy/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singlecasestudy/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -43,7 +43,7 @@ export default function UCaseStudy() {
 
 
 
-        Axios.post("http://localhost:3000/ucasestudy", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/ucasestudy", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

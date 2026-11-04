@@ -24,7 +24,7 @@ export default function AddSearchEngine() {
 
 
 
-        Axios.post("http://localhost:3000/addsearchengine", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addsearchengine", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

@@ -34,7 +34,7 @@ export default function ResetPassword() {
         try {
 
             const res = await Axios.post(
-                `http://localhost:3000/reset-password/${token}`,
+                `https://digital-marketing-l4y5.vercel.app/reset-password/${token}`,
                 {
                     password,
                     confirmPassword

@@ -5,7 +5,7 @@ export default function PopularSlideBlog() {
 	const [slidebar, setSlidebar] = useState([]);
 
 	useEffect(() => {
-		Axios.get("http://localhost:3000/blogslidebar")
+		Axios.get("https://digital-marketing-l4y5.vercel.app/blogslidebar")
 			.then(res => { setSlidebar(res.data.data) })
 	}, [])
 	return (

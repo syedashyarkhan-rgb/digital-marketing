@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TService() {
     const [service, setService] = useState([])
     useEffect(() => {
-        Axios.get("http://localhost:3000/service", {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/service", {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -17,7 +17,7 @@ export default function TService() {
         const newlist = service.filter(v => v._id !== ind)
         setService(newlist)
 
-        Axios.delete("http://localhost:3000/delservice/" + ind, {
+        Axios.delete("https://digital-marketing-l4y5.vercel.app/delservice/" + ind, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

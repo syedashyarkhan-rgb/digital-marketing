@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 export default function TSkills() {
   const [skills, setSkills] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/skills", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/skills", {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -17,7 +17,7 @@ export default function TSkills() {
     const newlist = skills.filter(v => v._id !== ind)
     setSkills(newlist)
 
-    Axios.delete("http://localhost:3000/delskills/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/delskills/" + ind, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

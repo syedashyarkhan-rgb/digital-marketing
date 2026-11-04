@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 export default function PopularSingleProject() {
      const [project,setProject]=useState([])
            useEffect(() => {
-                Axios.get("http://localhost:3000/singleproject")
+                Axios.get("https://digital-marketing-l4y5.vercel.app/singleproject")
                   .then(res => { setProject(res.data.data) })
               }, [])
     return (

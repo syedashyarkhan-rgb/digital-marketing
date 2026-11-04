@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TComment() {
     const [comment, setComment] = useState([])
     useEffect(() => {
-        Axios.get("http://localhost:3000/comment", {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/comment", {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -16,7 +16,7 @@ export default function TComment() {
             const newlist = comment.filter(v => v._id !== ind)
             setComment(newlist)
     
-            Axios.delete("http://localhost:3000/delcomment/" + ind, {
+            Axios.delete("https://digital-marketing-l4y5.vercel.app/delcomment/" + ind, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

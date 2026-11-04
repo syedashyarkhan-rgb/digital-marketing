@@ -24,7 +24,7 @@ export default function AddSeo() {
 
 
 
-        Axios.post("http://localhost:3000/addseo", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addseo", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TAuthor() {
     const [author, setAuthor] = useState([])
     useEffect(() => {
-        Axios.get("http://localhost:3000/auther", {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/auther", {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -16,7 +16,7 @@ export default function TAuthor() {
         const newlist = author.filter(v => v._id !== ind)
         setAuthor(newlist)
 
-        Axios.delete("http://localhost:3000/delauther/" + ind, {
+        Axios.delete("https://digital-marketing-l4y5.vercel.app/delauther/" + ind, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

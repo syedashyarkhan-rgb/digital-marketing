@@ -11,7 +11,7 @@ export default function UCounter() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singlecounter/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singlecounter/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -39,7 +39,7 @@ export default function UCounter() {
 
 
 
-        Axios.post("http://localhost:3000/ucounter", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/ucounter", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

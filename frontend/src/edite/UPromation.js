@@ -10,7 +10,7 @@ export default function UPromation() {
         
         
             useEffect(() => {
-                Axios.get("http://localhost:3000/singlepromation/" + id, {
+                Axios.get("https://digital-marketing-l4y5.vercel.app/singlepromation/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -38,7 +38,7 @@ export default function UPromation() {
 
 
 
-        Axios.post("http://localhost:3000/upromation", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/upromation", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

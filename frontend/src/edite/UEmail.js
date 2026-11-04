@@ -13,7 +13,7 @@ export default function UEmail() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singleemail/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singleemail/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -46,7 +46,7 @@ export default function UEmail() {
 
 
 
-        Axios.post("http://localhost:3000/uemail", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/uemail", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

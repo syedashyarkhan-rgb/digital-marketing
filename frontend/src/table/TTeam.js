@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TTeam() {
   const [team, setTeam] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/allteam", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/allteam", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -16,7 +16,7 @@ export default function TTeam() {
     const newlist = team.filter(v => v._id !== ind)
     setTeam(newlist)
 
-    Axios.delete("http://localhost:3000/delteam/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/delteam/" + ind, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TMarketing() {
     const [market, setMarket] = useState([])
     useEffect(() => {
-        Axios.get("http://localhost:3000/market", {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/market", {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -16,7 +16,7 @@ export default function TMarketing() {
         const newlist = market.filter(v => v._id !== ind)
         setMarket(newlist)
 
-        Axios.delete("http://localhost:3000/delmarket/" + ind, {
+        Axios.delete("https://digital-marketing-l4y5.vercel.app/delmarket/" + ind, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

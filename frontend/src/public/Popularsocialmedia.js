@@ -5,7 +5,7 @@ export default function Popularsocialmedia() {
     const [smedia,setSmedia]=useState([]);
            
                useEffect(() => {
-                Axios.get("http://localhost:3000/socialmedia")
+                Axios.get("https://digital-marketing-l4y5.vercel.app/socialmedia")
                   .then(res => { setSmedia(res.data.data) })
               }, [])
   return (

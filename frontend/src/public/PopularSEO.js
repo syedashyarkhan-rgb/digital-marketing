@@ -5,7 +5,7 @@ export default function PopularSEO() {
     const [seo,setSeo]=useState([]);
        
            useEffect(() => {
-            Axios.get("http://localhost:3000/seo")
+            Axios.get("https://digital-marketing-l4y5.vercel.app/seo")
               .then(res => { setSeo(res.data.data) })
           }, [])
 

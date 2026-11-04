@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 export default function Chooseus() {
   const [choose,setChoose]=useState([])
    useEffect(() => {
-        Axios.get("http://localhost:3000/chooseus")
+        Axios.get("https://digital-marketing-l4y5.vercel.app/chooseus")
           .then(res => { setChoose(res.data.data) })
       }, [])
   return (

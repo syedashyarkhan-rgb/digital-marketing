@@ -8,7 +8,7 @@ export default function Skills() {
      
       useEffect(() => {
 
-    Axios.get("http://localhost:3000/skills")
+    Axios.get("https://digital-marketing-l4y5.vercel.app/skills")
         .then(res => {
 
             setSkills(res.data.data);

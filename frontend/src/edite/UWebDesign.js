@@ -13,7 +13,7 @@ export default function UWebDesign() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singlewebdesign/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singlewebdesign/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -46,7 +46,7 @@ export default function UWebDesign() {
 
 
 
-        Axios.post("http://localhost:3000/uwebdesign", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/uwebdesign", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

@@ -20,7 +20,7 @@ export default function Addmainpage() {
 
 
 
-        Axios.post("http://localhost:3000/addhome", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addhome", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

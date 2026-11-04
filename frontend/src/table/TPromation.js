@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TPromation() {
   const [promation, setPromation] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/promation", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/promation", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -17,7 +17,7 @@ export default function TPromation() {
     const newlist = promation.filter(v => v._id !== ind)
     setPromation(newlist)
 
-    Axios.delete("http://localhost:3000/delpromation/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/delpromation/" + ind, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }

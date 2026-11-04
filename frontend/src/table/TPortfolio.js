@@ -5,7 +5,7 @@ import Portfolio from '../public/Portfolio'
 export default function TPortfolio() {
   const [portfolio, setPortfolio] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/portfolio", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/portfolio", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -18,7 +18,7 @@ export default function TPortfolio() {
     const newlist = Portfolio.filter(v => v._id !== ind)
     setPortfolio(newlist)
 
-    Axios.delete("http://localhost:3000/delportfolio/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/delportfolio/" + ind, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }

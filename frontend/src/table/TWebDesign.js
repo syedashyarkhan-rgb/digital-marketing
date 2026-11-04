@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TWebDesign() {
     const [webdesign, setWebdesign] = useState([])
     useEffect(() => {
-        Axios.get("http://localhost:3000/webdesign", {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/webdesign", {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -16,7 +16,7 @@ export default function TWebDesign() {
         const newlist = webdesign.filter(v => v._id !== ind)
         setWebdesign(newlist)
 
-        Axios.delete("http://localhost:3000/delwebdesign/" + ind, {
+        Axios.delete("https://digital-marketing-l4y5.vercel.app/delwebdesign/" + ind, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

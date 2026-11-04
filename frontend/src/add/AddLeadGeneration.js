@@ -24,7 +24,7 @@ export default function AddLeadGeneration() {
 
 
 
-        Axios.post("http://localhost:3000/addleadgeneration", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addleadgeneration", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

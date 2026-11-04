@@ -29,12 +29,12 @@ export default function Counter() {
    const [counter,setCounter]=useState([]);
    
        useEffect(() => {
-        Axios.get("http://localhost:3000/counter")
+        Axios.get("https://digital-marketing-l4y5.vercel.app/counter")
           .then(res => { setCounter(res.data.data) })
       }, [])
       const [video,setVideo]=useState([])
        useEffect(() => {
-        Axios.get("http://localhost:3000/video")
+        Axios.get("https://digital-marketing-l4y5.vercel.app/video")
           .then(res => { setVideo(res.data.data) })
       }, [])
   return (

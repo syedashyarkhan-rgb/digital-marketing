@@ -10,7 +10,7 @@ export default function USkills() {
     
     
         useEffect(() => {
-            Axios.get("http://localhost:3000/singleskills/" + id, {
+            Axios.get("https://digital-marketing-l4y5.vercel.app/singleskills/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -40,7 +40,7 @@ export default function USkills() {
 
 
 
-        Axios.post("http://localhost:3000/uskills", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/uskills", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

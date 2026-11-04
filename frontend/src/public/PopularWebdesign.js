@@ -5,7 +5,7 @@ export default function PopularWebdesign() {
                  const [web,setWeb]=useState([]);
                    
                        useEffect(() => {
-                        Axios.get("http://localhost:3000/webdesign")
+                        Axios.get("https://digital-marketing-l4y5.vercel.app/webdesign")
                           .then(res => { setWeb(res.data.data) })
                       }, [])
   return (

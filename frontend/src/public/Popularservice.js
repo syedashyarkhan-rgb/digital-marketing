@@ -5,7 +5,7 @@ export default function Popularservice() {
 	const [service,setService]=useState([]);
    
        useEffect(() => {
-        Axios.get("http://localhost:3000/service")
+        Axios.get("https://digital-marketing-l4y5.vercel.app/service")
           .then(res => { setService(res.data.data) })
       }, [])
   return (

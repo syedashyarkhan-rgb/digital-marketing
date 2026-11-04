@@ -11,7 +11,7 @@ export default function UComment() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singlecomment/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singlecomment/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -41,7 +41,7 @@ export default function UComment() {
 
 
 
-        Axios.post("http://localhost:3000/ucomment", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/ucomment", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

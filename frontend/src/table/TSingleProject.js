@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 export default function TSingleProject() {
   const [singleproject, setSingleproject] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/singleproject", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/singleproject", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -17,7 +17,7 @@ export default function TSingleProject() {
     const newlist = singleproject.filter(v => v._id !== ind)
     setSingleproject(newlist)
 
-    Axios.delete("http://localhost:3000/delsingleproject/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/delsingleproject/" + ind, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }

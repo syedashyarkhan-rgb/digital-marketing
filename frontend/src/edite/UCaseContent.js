@@ -10,7 +10,7 @@ export default function UCaseContent() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singlecasecontent/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singlecasecontent/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -37,7 +37,7 @@ export default function UCaseContent() {
 
 
 
-        Axios.post("http://localhost:3000/ucasecontent", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/ucasecontent", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

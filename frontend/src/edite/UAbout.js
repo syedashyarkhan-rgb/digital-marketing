@@ -11,7 +11,7 @@ export default function UAbout() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singleabout/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singleabout/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -39,7 +39,7 @@ export default function UAbout() {
 
 
 
-        Axios.post("http://localhost:3000/uabout", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/uabout", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

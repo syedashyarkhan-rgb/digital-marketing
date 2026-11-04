@@ -18,7 +18,7 @@ export default function UPrice() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singleprice/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singleprice/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -60,7 +60,7 @@ export default function UPrice() {
 
 
 
-        Axios.post("http://localhost:3000/uprice", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/uprice", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

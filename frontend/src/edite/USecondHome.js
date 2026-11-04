@@ -14,7 +14,7 @@ export default function USecondHome() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singlesechome/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singlesechome/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -48,7 +48,7 @@ export default function USecondHome() {
 
 
 
-        Axios.post("http://localhost:3000/ushome", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/ushome", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

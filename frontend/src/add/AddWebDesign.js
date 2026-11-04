@@ -24,7 +24,7 @@ export default function AddWebDesign() {
 
 
 
-        Axios.post("http://localhost:3000/addwebdesign", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addwebdesign", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

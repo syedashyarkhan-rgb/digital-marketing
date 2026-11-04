@@ -19,7 +19,7 @@ export default function AddCaseContent() {
 
 
 
-        Axios.post("http://localhost:3000/addcasecontent", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addcasecontent", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

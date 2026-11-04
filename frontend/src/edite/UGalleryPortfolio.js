@@ -11,7 +11,7 @@ export default function UGalleryPortfolio() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singlegalleryportfolio/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singlegalleryportfolio/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -41,7 +41,7 @@ export default function UGalleryPortfolio() {
 
 
 
-        Axios.post("http://localhost:3000/ugalleryportfolio", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/ugalleryportfolio", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

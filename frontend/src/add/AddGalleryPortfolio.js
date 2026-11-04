@@ -19,7 +19,7 @@ export default function AddGalleryPortfolio() {
 
 
 
-        Axios.post("http://localhost:3000/addgalleryportfolio", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addgalleryportfolio", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

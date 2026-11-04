@@ -5,7 +5,7 @@ export default function Price() {
 	const [price,setPrice]=useState([]);
 	   
 		   useEffect(() => {
-			Axios.get("http://localhost:3000/price")
+			Axios.get("https://digital-marketing-l4y5.vercel.app/price")
 			  .then(res => { setPrice(res.data.data) })
 		  }, [])
   return (

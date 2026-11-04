@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TCaseStudy() {
     const [casestudy, setCasestudy] = useState([])
     useEffect(() => {
-        Axios.get("http://localhost:3000/casestudy", {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/casestudy", {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -17,7 +17,7 @@ export default function TCaseStudy() {
         const newlist = casestudy.filter(v => v._id !== ind)
         setCasestudy(newlist)
 
-        Axios.delete("http://localhost:3000/delcasestudy/" + ind, {
+        Axios.delete("https://digital-marketing-l4y5.vercel.app/delcasestudy/" + ind, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

@@ -7,7 +7,7 @@ export default function SecondMainpage() {
 
     useEffect(() => {
 
-        Axios.get("http://localhost:3000/secondhome")
+        Axios.get("https://digital-marketing-l4y5.vercel.app/secondhome")
             .then(res => {
                 setHome2(res.data.data)
             })

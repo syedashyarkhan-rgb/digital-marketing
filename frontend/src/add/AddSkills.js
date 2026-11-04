@@ -19,7 +19,7 @@ export default function AddSkills() {
 
 
 
-        Axios.post("http://localhost:3000/addskills", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addskills", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

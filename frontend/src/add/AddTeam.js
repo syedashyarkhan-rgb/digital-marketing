@@ -23,7 +23,7 @@ export default function AddTeam() {
 
 
 
-        Axios.post("http://localhost:3000/addteam", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addteam", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

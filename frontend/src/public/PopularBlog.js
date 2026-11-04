@@ -8,7 +8,7 @@ import  Axios  from 'axios'
 export default function PopularBlog() {
 	 const [blog,setBlog]=useState([])
        useEffect(() => {
-            Axios.get("http://localhost:3000/allblog")
+            Axios.get("https://digital-marketing-l4y5.vercel.app/allblog")
               .then(res => { setBlog(res.data.data) })
           }, [])
   return (

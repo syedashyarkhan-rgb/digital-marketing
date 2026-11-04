@@ -20,7 +20,7 @@ export default function AddCounter() {
 
 
 
-        Axios.post("http://localhost:3000/addcounter", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addcounter", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

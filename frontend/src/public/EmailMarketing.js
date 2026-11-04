@@ -5,7 +5,7 @@ export default function EmailMarketing() {
 	const [market,setMarket]=useState([]);
 	   
 		   useEffect(() => {
-			Axios.get("http://localhost:3000/market")
+			Axios.get("https://digital-marketing-l4y5.vercel.app/market")
 			  .then(res => { setMarket(res.data.data) })
 		  }, [])
   return (

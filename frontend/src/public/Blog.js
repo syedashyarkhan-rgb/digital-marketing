@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 export default function Blog() {
   const [blog,setBlog]=useState([])
        useEffect(() => {
-            Axios.get("http://localhost:3000/blog")
+            Axios.get("https://digital-marketing-l4y5.vercel.app/blog")
               .then(res => { setBlog(res.data.data) })
           }, [])
   return (

@@ -14,7 +14,7 @@ export default function UChoose() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singlechoose/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singlechoose/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -47,7 +47,7 @@ export default function UChoose() {
 
 
 
-        Axios.post("http://localhost:3000/uchoose", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/uchoose", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

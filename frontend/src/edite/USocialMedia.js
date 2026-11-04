@@ -13,7 +13,7 @@ export default function USocialMedia() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singlemedia/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singlemedia/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -46,7 +46,7 @@ export default function USocialMedia() {
 
 
 
-        Axios.post("http://localhost:3000/usocialmedia", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/usocialmedia", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

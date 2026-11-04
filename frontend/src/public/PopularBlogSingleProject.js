@@ -7,16 +7,16 @@ export default function PopularBlogSingleProject() {
   const [comment,setComment] = useState([]);
   
     useEffect(() => {
-      Axios.get("http://localhost:3000/singleblog")
+      Axios.get("https://digital-marketing-l4y5.vercel.app/singleblog")
         .then(res => { setBsingleproject(res.data.data) })
     }, [])
 
     useEffect(() => {
-      Axios.get("http://localhost:3000/auther")
+      Axios.get("https://digital-marketing-l4y5.vercel.app/auther")
         .then(res => { setAuther(res.data.data) })
     }, [])
     useEffect(() => {
-      Axios.get("http://localhost:3000/comment")
+      Axios.get("https://digital-marketing-l4y5.vercel.app/comment")
         .then(res => { setComment(res.data.data) })
     }, [])
 

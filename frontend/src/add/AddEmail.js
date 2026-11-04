@@ -24,7 +24,7 @@ export default function AddEmail() {
 
 
 
-        Axios.post("http://localhost:3000/addemail", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addemail", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

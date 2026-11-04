@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TSecondHome() {
   const [shome, setShome] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/secondhome", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/secondhome", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -16,7 +16,7 @@ export default function TSecondHome() {
     const newlist = shome.filter(v => v._id !== ind)
     setShome(newlist)
 
-    Axios.delete("http://localhost:3000/delsecondhome/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/delsecondhome/" + ind, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }

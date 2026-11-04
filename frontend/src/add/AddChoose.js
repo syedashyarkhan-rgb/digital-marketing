@@ -25,7 +25,7 @@ export default function AddChoose() {
 
 
 
-        Axios.post("http://localhost:3000/addchoose", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addchoose", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

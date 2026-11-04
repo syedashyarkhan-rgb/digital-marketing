@@ -11,7 +11,7 @@ export default function UVideo() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singlevideo/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singlevideo/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -39,7 +39,7 @@ export default function UVideo() {
 
 
 
-        Axios.post("http://localhost:3000/uvideo", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/uvideo", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

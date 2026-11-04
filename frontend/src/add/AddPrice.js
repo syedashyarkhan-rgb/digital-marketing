@@ -35,7 +35,7 @@ export default function AddPrice() {
 
 
 
-        Axios.post("http://localhost:3000/addprice", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addprice", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

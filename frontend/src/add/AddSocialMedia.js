@@ -24,7 +24,7 @@ export default function AddSocialMedia() {
 
 
 
-        Axios.post("http://localhost:3000/addsocialmedia", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addsocialmedia", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

@@ -12,7 +12,7 @@ export default function UService() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singleservice/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singleservice/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

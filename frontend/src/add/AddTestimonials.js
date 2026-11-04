@@ -21,7 +21,7 @@ export default function AddTestimonials() {
 
 
 
-        Axios.post("http://localhost:3000/addtestimonials", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addtestimonials", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

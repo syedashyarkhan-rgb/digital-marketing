@@ -7,7 +7,7 @@ export default function TeamMember() {
   const [team, setTeam] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:3000/allteam")
+    Axios.get("https://digital-marketing-l4y5.vercel.app/allteam")
       .then(res => { setTeam(res.data.data) })
   }, [])
   return (

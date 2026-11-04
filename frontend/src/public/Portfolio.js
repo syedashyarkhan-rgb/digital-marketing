@@ -8,7 +8,7 @@ export default function Portfolio() {
 
     useEffect(() => {
 
-        Axios.get("http://localhost:3000/gallaryportfolio")
+        Axios.get("https://digital-marketing-l4y5.vercel.app/gallaryportfolio")
             .then((res) => {
                 console.log(res.data);
                 setPortfolio(res.data.data);

@@ -14,7 +14,7 @@ export default function USliderBlog() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singleslider/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singleslider/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -47,7 +47,7 @@ export default function USliderBlog() {
 
 
 
-        Axios.post("http://localhost:3000/usliderblog", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/usliderblog", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

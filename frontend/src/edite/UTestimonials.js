@@ -12,7 +12,7 @@ export default function UTestimonials() {
             
             
                 useEffect(() => {
-                    Axios.get("http://localhost:3000/singletestimonials/" + id, {
+                    Axios.get("https://digital-marketing-l4y5.vercel.app/singletestimonials/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -42,7 +42,7 @@ export default function UTestimonials() {
 
 
 
-        Axios.post("http://localhost:3000/utestimonials", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/utestimonials", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

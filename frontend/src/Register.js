@@ -163,7 +163,7 @@ export default function Register() {
         try {
 
             const res = await Axios.post(
-                "http://localhost:3000/userregister",
+                "https://digital-marketing-l4y5.vercel.app/userregister",
                 {
                     firstName,
                     lastName,

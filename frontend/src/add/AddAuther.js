@@ -19,7 +19,7 @@ export default function AddAuther() {
 
 
 
-        Axios.post("http://localhost:3000/addauther", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/addauther", data, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }

@@ -24,7 +24,7 @@ export default function USingleProject() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singleproject/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singleproject/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -82,7 +82,7 @@ export default function USingleProject() {
 
 
 
-        Axios.post("http://localhost:3000/usingleproject", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/usingleproject", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

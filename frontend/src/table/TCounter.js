@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TCounter() {
   const [counter, setCounter] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/counter", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/counter", {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -17,7 +17,7 @@ export default function TCounter() {
     const newlist = counter.filter(v => v._id !== ind)
     setCounter(newlist)
 
-    Axios.delete("http://localhost:3000/delcounter/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/delcounter/" + ind, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

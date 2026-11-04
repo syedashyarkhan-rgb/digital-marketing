@@ -11,7 +11,7 @@ export default function UAuther() {
 
 
     useEffect(() => {
-        Axios.get("http://localhost:3000/singleauther/" + id, {
+        Axios.get("https://digital-marketing-l4y5.vercel.app/singleauther/" + id, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -42,7 +42,7 @@ export default function UAuther() {
 
 
 
-        Axios.post("http://localhost:3000/uauther", data, {
+        Axios.post("https://digital-marketing-l4y5.vercel.app/uauther", data, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

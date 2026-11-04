@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export default function TAbout() {
   const [about, setAbout] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3000/about", {
+    Axios.get("https://digital-marketing-l4y5.vercel.app/about", {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -17,7 +17,7 @@ export default function TAbout() {
     const newlist = about.filter(v => v._id !== ind)
     setAbout(newlist)
 
-    Axios.delete("http://localhost:3000/delabout/" + ind, {
+    Axios.delete("https://digital-marketing-l4y5.vercel.app/delabout/" + ind, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
