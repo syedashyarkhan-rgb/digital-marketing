@@ -57,7 +57,7 @@ export default function PopularSlideBlog() {
 								<h4 className="blog_sidebar_title">Latest Blog</h4>
 
 								<div className="single_latest_blog">
-									<a href="#">
+									<a href="/">
 										<h4>
 											How Data-Driven Strategies Can Improve Business Performance.
 										</h4>
@@ -65,7 +65,7 @@ export default function PopularSlideBlog() {
 								</div>
 
 								<div className="single_latest_blog">
-									<a href="#">
+									<a href="/">
 										<h4>
 											The Importance of a Strong Online Presence for Modern Businesses.
 										</h4>
@@ -73,7 +73,7 @@ export default function PopularSlideBlog() {
 								</div>
 
 								<div className="single_latest_blog">
-									<a href="#">
+									<a href="/">
 										<h4>
 											How Effective Digital Marketing Can Help Businesses Reach New Customers.
 										</h4>
@@ -85,32 +85,32 @@ export default function PopularSlideBlog() {
 								<h4 className="blog_sidebar_title">Categories</h4>
 								<ul>
 									<li>
-										<a href="#">
+										<a href="/">
 											<i className="ti-arrow-right"></i> Digital Marketing
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="/">
 											<i className="ti-arrow-right"></i> Business
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="/">
 											<i className="ti-arrow-right"></i> Technology
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="/">
 											<i className="ti-arrow-right"></i> Web Development
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="/">
 											<i className="ti-arrow-right"></i> Branding
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="/">
 											<i className="ti-arrow-right"></i> SEO
 										</a>
 									</li>
@@ -127,18 +127,18 @@ export default function PopularSlideBlog() {
 
 							<div className="tag">
 								<h4 className="blog_sidebar_title">Tag cloud</h4>
-								<a href="#">Digital Marketing</a>
-								<a href="#">Development</a>
-								<a href="#">SEO</a>
-								<a href="#">Business</a>
-								<a href="#">Technology</a>
-								<a href="#">Branding</a>
-								<a href="#">Online Growth</a>
-								<a href="#">Digital Strategy</a>
+								<a href="/">Digital Marketing</a>
+								<a href="/">Development</a>
+								<a href="/">SEO</a>
+								<a href="/">Business</a>
+								<a href="/">Technology</a>
+								<a href="/">Branding</a>
+								<a href="/">Online Growth</a>
+								<a href="/">Digital Strategy</a>
 							</div>
 
 							<div className="banner">
-								<a href="#">
+								<a href="/">
 									<img
 										src="assets/img/blog/banner_3.jpg"
 										className="img-fluid"

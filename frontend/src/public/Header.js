@@ -50,7 +50,7 @@ export default function Header() {
                                         </ul>
                                     </li>
                                     <li className="has-children">
-                                        <a href="#" className="nav-link">Pages</a>
+                                        <button type="button" className="nav-link"> Pages</button>
                                         <ul className="dropdown">
 
                                             <li><a href="/team" className="nav-link">Team Member</a></li>
@@ -67,14 +67,16 @@ export default function Header() {
                                     <li><a className="nav-link" href="/contact">Contact</a></li>
 
                                 </ul>
-                                 <div className="auth-buttons">
-        <a href="/login" className="auth-btn">Login</a>
-        
-    </div>
+                                <div className="auth-buttons">
+                                    <a href="/login" className="auth-btn">Login</a>
+
+                                </div>
                             </nav>
                         </div>
                         <div className="col-6 d-inline-block d-xl-none ml-md-0 py-3" style={{ position: "relative", top: "3px" }}>
-                            <a href="#" className="site-menu-toggle js-menu-toggle float-right"><span className="icon-menu h3"></span></a>
+                            <button type="button" className="site-menu-toggle js-menu-toggle float-right">
+                                <span className="icon-menu h3"></span>
+                            </button>
                         </div>
                     </div>
                 </div>

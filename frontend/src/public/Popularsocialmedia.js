@@ -1,6 +1,5 @@
 import  Axios  from 'axios';
 import React, { useEffect, useState } from 'react'
-import SocialMedia from './SocialMedia';
 
 export default function Popularsocialmedia() {
     const [smedia,setSmedia]=useState([]);

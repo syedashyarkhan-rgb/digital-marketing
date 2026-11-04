@@ -69,7 +69,7 @@ export default function SecondMainpage() {
                                             {item.para}
                                         </h3>
 
-                                        <a href="#">
+                                        <a href="/">
                                           {item.button}
                                         </a>
 

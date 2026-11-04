@@ -193,7 +193,7 @@ export default function PopularBlogSingleProject() {
                 <h4 className="blog_sidebar_title">Latest Blog</h4>
 
                 <div className="single_latest_blog">							
-                  <a href="#">
+                  <a href="/">
                     <h4>
                       How Data-Driven Strategies Can Improve Business Performance.
                     </h4>
@@ -201,7 +201,7 @@ export default function PopularBlogSingleProject() {
                 </div>
 
                 <div className="single_latest_blog">							
-                  <a href="#">
+                  <a href="/">
                     <h4>
                       The Importance of a Strong Online Presence for Modern Businesses.
                     </h4>
@@ -209,7 +209,7 @@ export default function PopularBlogSingleProject() {
                 </div>
 
                 <div className="single_latest_blog">							
-                  <a href="#">
+                  <a href="/">
                     <h4>
                       How Effective Digital Marketing Can Help Businesses Reach New Customers.
                     </h4>
@@ -222,37 +222,37 @@ export default function PopularBlogSingleProject() {
 
                 <ul>
                   <li>
-                    <a href="#">
+                    <a href="/">
                       <i className="ti-arrow-right"></i> Digital Marketing
                     </a>
                   </li>
 
                   <li>
-                    <a href="#">
+                    <a href="/">
                       <i className="ti-arrow-right"></i> Business
                     </a>
                   </li>
 
                   <li>
-                    <a href="#">
+                    <a href="/">
                       <i className="ti-arrow-right"></i> Technology
                     </a>
                   </li>
 
                   <li>
-                    <a href="#">
+                    <a href="/">
                       <i className="ti-arrow-right"></i> Web Development
                     </a>
                   </li>
 
                   <li>
-                    <a href="#">
+                    <a href="/">
                       <i className="ti-arrow-right"></i> Branding
                     </a>
                   </li>
 
                   <li>
-                    <a href="#">
+                    <a href="/">
                       <i className="ti-arrow-right"></i> SEO
                     </a>
                   </li>

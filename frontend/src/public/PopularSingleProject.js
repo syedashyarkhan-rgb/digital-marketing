@@ -36,11 +36,11 @@ export default function PopularSingleProject() {
                                     <ul>
                                         <li><i className={item.icon}></i><b>{item.client} </b>{item.name} </li>
                                         <li><i className={item.icon2}></i><b>{item.data} </b>{item.number}</li>
-                                        <li><i className={item.icon3}></i><b>{item.category} </b><a href="#">{item.limk} </a></li>
-                                        <li><i className={item.icon4}></i><b>{item.url} </b><a href="#">{item.link2}</a></li>
+                                        <li><i className={item.icon3}></i><b>{item.category} </b><a href="/">{item.limk} </a></li>
+                                        <li><i className={item.icon4}></i><b>{item.url} </b><a href="/">{item.link2}</a></li>
                                     </ul>
                                 </div>
-                                <a className="btn_one" href="#">{item.button}</a>
+                                <a className="btn_one" href="/">{item.button}</a>
                             </div>
                         </div>
                         </div>
