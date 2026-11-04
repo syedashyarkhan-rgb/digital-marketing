@@ -27,10 +27,9 @@ display: inline-block; }
 	text-transform: capitalize;
 	display: inline-block;
 	text-decoration: none !important;
-	color: #fff !important;
 }
 .site-navbar .site-navigation .site-menu > li > a:hover {
-color: #ffaa17 !important; }
+color: #ffaa17; }
 .site-navbar .site-navigation .site-menu > li.social > a {
 padding-left: 5px;
 padding-right: 5px; }

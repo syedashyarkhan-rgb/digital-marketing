@@ -1,36 +1,48 @@
-// Contact Form - Frontend Only
 
-document.addEventListener("DOMContentLoaded", function () {
-
-    const contactForm = document.querySelector("#contact-form");
-
-    if (!contactForm) return;
-
-    contactForm.addEventListener("submit", function (e) {
-
-        e.preventDefault();
-
-        const name = contactForm.querySelector('[name="name"]').value.trim();
-        const email = contactForm.querySelector('[name="email"]').value.trim();
-        const subject = contactForm.querySelector('[name="subject"]').value.trim();
-        const message = contactForm.querySelector('[name="message"]').value.trim();
-
-        if (!name || !email || !subject || !message) {
-            alert("Please fill in all fields.");
-            return;
-        }
-
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!emailRegex.test(email)) {
-            alert("Please enter a valid email address.");
-            return;
-        }
-
-        alert("Thank you! Your message has been received.");
-
-        contactForm.reset();
-
+// JavaScript contact form Document
+$(document).ready(function() {
+	$('form#contact-form').submit(function() {
+	$('form#contact-form .error').remove();
+	var hasError = false;
+	$('.requiredField').each(function() {
+	if(jQuery.trim($(this).val()) == '') {
+    var labelText = $(this).prev('label').text();
+    $(this).parent().append('<span class="error">You forgot to enter your '+labelText+'</span>');
+    $(this).addClass('inputError');
+    hasError = true;
+    } else if($(this).hasClass('email')) {
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    if(!emailReg.test(jQuery.trim($(this).val()))) {
+    var labelText = $(this).prev('label').text();
+    $(this).parent().append('<span class="error">You entered an invalid '+labelText+'</span>');
+    $(this).addClass('inputError');
+    hasError = true;
+    }
+    }
+    });
+    if(!hasError) {
+    $('form#contact-form input.submit').fadeOut('normal', function() {
+    $(this).parent().append('');
     });
 
+     $("#loader").show();
+        $.ajax({
+            url: "contact.php",
+            type: "POST",
+            data:  new FormData(this),
+            contentType: false,
+            cache: false,
+            processData:false,
+            success: function(data){
+			  $('form#contact-form').slideUp("fast", function() {
+			  $(this).before('<div class="success">Thank you. Your Email was sent successfully.</div>');
+			  $("#loader").hide();
+			  })
+            }           
+       });
+	   
+	   return false;
+    }
+ 
+   });
 });
