@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from './Footer'
 import Logo from './Logo'
 import Header from './Header'
-import PopularContact from './PopularContact'
+import "./contact.css"
 
 
 export default function Contact() {
@@ -74,12 +74,79 @@ export default function Contact() {
                     ></iframe>
                 </div>
                 {/* <!-- START MAP -->		 */}
+               
+<div className="message-section">
+  <div className="message-container">
+    <div className="message-heading">
+      <span className="message-subtitle">GET IN TOUCH</span>
+      <h3>Leave a Message</h3>
+      <p>Have a question or feedback? Send us a message.</p>
+    </div>
 
-                {/* <!-- CONTACT --> */}
+    <form
+      className="message-form"
+      id="messageForm"
+      method="post"
+    >
+      <div className="message-grid">
+
+        <div className="message-field">
+          <label htmlFor="visitorName">Your Name</label>
+          <input
+            type="text"
+            name="visitorName"
+            id="visitorName"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <div className="message-field">
+          <label htmlFor="visitorEmail">Email Address</label>
+          <input
+            type="email"
+            name="visitorEmail"
+            id="visitorEmail"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div className="message-field full-width">
+          <label htmlFor="messageSubject">Subject</label>
+          <input
+            type="text"
+            name="messageSubject"
+            id="messageSubject"
+            placeholder="What is this about?"
+            required
+          />
+        </div>
+
+        <div className="message-field full-width">
+          <label htmlFor="visitorMessage">Your Message</label>
+          <textarea
+            rows="6"
+            name="visitorMessage"
+            id="visitorMessage"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+        </div>
+
+        <div className="message-submit full-width">
+          <button type="submit" className="message-btn">
+            Send Message <span>→</span>
+          </button>
+        </div>
+
+      </div>
+    </form>
+  </div>
+</div>
 
 
-                <PopularContact />
-                {/* <!-- END CONTACT -->		 */}
+            
 
                 {/* <!-- START PARTNER LOGO --> */}
                 <Logo />

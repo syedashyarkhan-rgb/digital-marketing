@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Footer from './Footer'
 import Logo from './Logo'
-import Contact from './Search'
 import Header from './Header'
 import  Axios  from 'axios'
 
@@ -94,10 +93,6 @@ export default function PopularBlog() {
       </div>
     </section>
 		{/* <!-- END BLOG -->	 */}
-
-		{/* <!-- CONTACT --> */}
-		<Contact/>
-		{/* <!-- END CONTACT -->		 */}
 
 		{/* <!-- START PARTNER LOGO --> */}
 		<Logo/>

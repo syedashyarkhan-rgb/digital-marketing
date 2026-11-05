@@ -1,7 +1,6 @@
 import React from 'react'
 import Footer from './Footer'
 import Logo from './Logo'
-import Contact from './Search'
 import Counter from './Counter'
 // import Feature from './Feature'
 import Header from './Header'
@@ -54,7 +53,7 @@ export default function About() {
 		{/* <!-- END HIRE US --> */}
 		
 		{/* <!-- CONTACT --> */}
-		<Contact/>
+		
 		{/* <!-- END CONTACT -->		 */}
 
 		{/* <!-- START PARTNER LOGO --> */}

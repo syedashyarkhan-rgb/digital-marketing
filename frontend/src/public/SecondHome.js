@@ -8,7 +8,6 @@ import Skills from './Skills'
 import Promation from './Promation'
 import Testimonials from './Testimonials'
 import Blog from './Blog'
-import Search from './Search'
 import Logo from './Logo'
 import Footer from './Footer'
 import SecondMainpage from './SecondMainpage'
@@ -59,7 +58,7 @@ export default function SecondHome() {
 		{/* <!-- END BLOG -->		 */}
 		
 		{/* <!-- CONTACT --> */}
-		<Search/>
+		
 		{/* <!-- END CONTACT -->		 */}
 
 		{/* <!-- START PARTNER LOGO --> */}

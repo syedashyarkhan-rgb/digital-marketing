@@ -1,0 +1,161 @@
+
+/* Message Form Section */
+.message-section {
+    width: 100%;
+    padding: 70px 20px;
+    background: #f7f9fc;
+}
+
+.message-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 45px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.06);
+}
+
+.message-heading {
+    margin-bottom: 35px;
+}
+
+.message-subtitle {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #16a085;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.message-heading h3 {
+    margin: 0 0 12px;
+    color: #202b3c;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.message-heading p {
+    margin: 0;
+    color: #7b8493;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.message-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.message-field {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.message-field.full-width,
+.message-submit.full-width {
+    grid-column: 1 / -1;
+}
+
+.message-field label {
+    color: #263449;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.message-field input,
+.message-field textarea {
+    width: 100%;
+    padding: 15px 16px;
+    border: 1px solid #e1e6ed;
+    border-radius: 8px;
+    outline: none;
+    background: #fbfcfe;
+    color: #263449;
+    font-family: inherit;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.message-field input {
+    height: 52px;
+}
+
+.message-field textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.message-field input::placeholder,
+.message-field textarea::placeholder {
+    color: #a3acb9;
+}
+
+.message-field input:focus,
+.message-field textarea:focus {
+    border-color: #16a085;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(22, 160, 133, 0.10);
+}
+
+.message-submit {
+    margin-top: 5px;
+}
+
+.message-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    background: #16a085;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.message-btn:hover {
+    background: #12816d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(22, 160, 133, 0.2);
+}
+
+.message-btn span {
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .message-section {
+        padding: 40px 15px;
+    }
+
+    .message-container {
+        padding: 25px 18px;
+    }
+
+    .message-heading h3 {
+        font-size: 26px;
+    }
+
+    .message-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .message-field.full-width,
+    .message-submit.full-width {
+        grid-column: auto;
+    }
+
+    .message-btn {
+        width: 100%;
+    }
+}
