@@ -17,14 +17,11 @@ const crypto = require("crypto");
 require("dotenv").config();
 const nodemailer = require("nodemailer");
 
-// mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI)
 
-//   .then((res) => console.log("Connected to DB"))
-//   .catch((err) => console.log(err));
-
-mongoose.connect("mongodb+srv://coding:ashyar12@cprogramming.aipe0wu.mongodb.net/webcourse?retryWrites=true&w=majority")
-  .then(() => console.log("Connected to DB"))
+  .then((res) => console.log("Connected to DB"))
   .catch((err) => console.log(err));
+
 
 
 const transporter = nodemailer.createTransport({
