@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import AboutHireus from './AboutHireus'
 import Header from './Header'
 import Axios from 'axios';
+import Footer from './Footer';
 
 export default function TeamMember() {
   const [team, setTeam] = useState([]);
@@ -72,7 +73,7 @@ export default function TeamMember() {
         {/* <!-- END HIRE US --> */}
 
         {/* <!-- START FOOTER --> */}
-        <footer />
+        <Footer />
         {/* <!-- END FOOTER -->	 */}
       </body>
     </>
